@@ -1,4 +1,4 @@
-# Aki & Syl's Wedding in Tokyo Calendar Link
+# Aki & Syl's Wedding in Tokyo 🇯🇵 🌸 Calendar Link
 
 This is a tiny static GitHub Pages site for sharing one calendar link over WhatsApp.
 
