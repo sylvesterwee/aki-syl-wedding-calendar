@@ -1,0 +1,162 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Aki & Syl's Wedding - Add to Calendar</title>
+  <meta name="description" content="Add Aki & Syl's Wedding to your calendar.">
+  <style>
+    :root {
+      color-scheme: light;
+      --ink: #24211e;
+      --muted: #645b53;
+      --paper: #fffaf3;
+      --line: #d9cdbf;
+      --accent: #4f7f72;
+      --accent-dark: #355b51;
+      --rose: #b76e79;
+      --white: #ffffff;
+    }
+
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      background:
+        radial-gradient(circle at 16% 14%, rgba(183, 110, 121, 0.18), transparent 28rem),
+        radial-gradient(circle at 86% 12%, rgba(79, 127, 114, 0.16), transparent 24rem),
+        linear-gradient(135deg, #fffaf3 0%, #f6efe6 100%);
+      color: var(--ink);
+    }
+
+    main {
+      width: min(42rem, calc(100% - 2rem));
+      margin: 0 auto;
+      min-height: 100vh;
+      display: grid;
+      align-content: center;
+      padding: 2rem 0;
+    }
+
+    .panel {
+      background: rgba(255, 255, 255, 0.82);
+      border: 1px solid var(--line);
+      border-radius: 8px;
+      box-shadow: 0 24px 80px rgba(61, 46, 35, 0.12);
+      padding: clamp(1.4rem, 5vw, 2.4rem);
+    }
+
+    .eyebrow {
+      margin: 0 0 0.5rem;
+      color: var(--rose);
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    h1 {
+      margin: 0;
+      font-family: Georgia, "Times New Roman", serif;
+      font-size: clamp(2.3rem, 10vw, 4.7rem);
+      font-weight: 500;
+      line-height: 0.98;
+      letter-spacing: 0;
+    }
+
+    .details {
+      display: grid;
+      gap: 0.6rem;
+      margin: 1.5rem 0 1.7rem;
+      color: var(--muted);
+      font-size: 1rem;
+      line-height: 1.5;
+    }
+
+    .details strong {
+      color: var(--ink);
+      font-weight: 700;
+    }
+
+    .actions {
+      display: grid;
+      grid-template-columns: repeat(2, minmax(0, 1fr));
+      gap: 0.75rem;
+    }
+
+    a,
+    button {
+      min-height: 3.2rem;
+      border: 1px solid var(--accent);
+      border-radius: 8px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.55rem;
+      padding: 0.75rem 1rem;
+      color: var(--white);
+      background: var(--accent);
+      font: inherit;
+      font-weight: 700;
+      text-align: center;
+      text-decoration: none;
+      cursor: pointer;
+    }
+
+    a:hover,
+    button:hover {
+      background: var(--accent-dark);
+      border-color: var(--accent-dark);
+    }
+
+    .secondary {
+      background: var(--white);
+      color: var(--accent-dark);
+    }
+
+    .secondary:hover {
+      color: var(--white);
+    }
+
+    .hint {
+      margin: 1.1rem 0 0;
+      color: var(--muted);
+      font-size: 0.9rem;
+      line-height: 1.45;
+    }
+
+    @media (max-width: 520px) {
+      .actions {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <main>
+    <section class="panel" aria-labelledby="title">
+      <p class="eyebrow">Add to calendar</p>
+      <h1 id="title">Aki & Syl's Wedding</h1>
+
+      <div class="details">
+        <div><strong>Date:</strong> Sunday, 28 March 2027</div>
+        <div><strong>Time:</strong> All day</div>
+        <div><strong>Venue:</strong> Happo-en, 1 Chome-1-1 Shirokanedai, Minato City, Tokyo 108-8631, Japan</div>
+      </div>
+
+      <div class="actions" aria-label="Calendar options">
+        <a href="https://calendar.google.com/calendar/render?action=TEMPLATE&text=Aki+%26+Syl%27s+Wedding&dates=20270328/20270329&location=Happo-en%2c+1+Chome-1-1+Shirokanedai%2c+Minato+City%2c+Tokyo+108-8631%2c+Japan&details=Wedding+celebration+for+Aki+%26+Syl" target="_blank" rel="noopener">Google Calendar</a>
+        <a href="https://outlook.live.com/calendar/0/deeplink/compose?subject=Aki+%26+Syl%27s+Wedding&startdt=2027-03-28&enddt=2027-03-29&allday=true&location=Happo-en%2c+1+Chome-1-1+Shirokanedai%2c+Minato+City%2c+Tokyo+108-8631%2c+Japan&body=Wedding+celebration+for+Aki+%26+Syl" target="_blank" rel="noopener">Outlook Calendar</a>
+        <a class="secondary" href="aki-syl-wedding.ics">Apple Calendar</a>
+        <a class="secondary" href="aki-syl-wedding.ics" download>Download .ics</a>
+      </div>
+
+      <p class="hint">On iPhone, choose Apple Calendar or Download .ics, then open the downloaded invite.</p>
+    </section>
+  </main>
+</body>
+</html>
